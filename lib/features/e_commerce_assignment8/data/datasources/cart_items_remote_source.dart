@@ -2,11 +2,7 @@ import 'dart:convert';
 import 'dart:core';
 
 import 'package:dartz/dartz.dart';
-import 'package:dartz/dartz_unsafe.dart';
-import 'package:e_commerce_assignment8/core/constants/constant_data.dart';
 import 'package:e_commerce_assignment8/features/e_commerce_assignment8/data/models/plant_model.dart';
-import 'package:e_commerce_assignment8/features/e_commerce_assignment8/domain/entities/plant_entity.dart';
-import 'package:e_commerce_assignment8/features/e_commerce_assignment8/domain/usecases/remove_from_cart.dart';
 
 import '../../../../core/constants/url.dart';
 import '../../../../core/errors/exception.dart';
@@ -138,7 +134,7 @@ class RemoteDataSourceImpl implements CartItemsRemoteDataSource {
           allItemsList[index].isAddedToCart = true;
         }
       }
-      return Right(null);
+      return const Right(null);
     } on InsertionFailure {
       return const Left(InsertionFailure('Failed to remove from cart'));
     }
