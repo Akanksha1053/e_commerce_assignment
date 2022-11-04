@@ -42,6 +42,8 @@ dependencies:
   http: ^0.13.5
   dartz: ^0.10.1
   get_it: ^7.2.0
+  kiwi: ^4.0.2
+  
 
 flutter_native_splash:
   background_image: assets/images/splash_screen.png
@@ -58,6 +60,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+   # injectable_generator:
+  build_runner: 2.2.0
+  kiwi_generator: 4.0.2
+  
+  
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
